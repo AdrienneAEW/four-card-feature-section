@@ -1,0 +1,131 @@
+//GLOBAL
+$page-font: "Poppins", sans-serif;
+
+//Primary
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+//Neutral
+
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+body {
+    font-family: $page-font;
+    font-size: 15px;
+    background-color: $VeryLightGray;
+}
+
+h1, h2 {
+    color: $VeryDarkBlue;
+}
+
+main {
+    h1, .tagline, .description {
+        text-align: center;
+    }
+
+    .tagline, .description {
+        color: $GrayishBlue;
+    }
+    .tagline {
+        font-weight: 200;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .description {
+        width: 40%;
+        margin: 1.75rem auto 3.5rem;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 1fr;
+    justify-content: center;
+
+    .card {
+        background-color: #ffffff;
+        padding: 1.25rem;
+        align-self: center;
+        box-shadow: -6px 6px 12px -3px $GrayishBlue;
+        width: 80%;
+      
+        &.green {
+            border-top: 3px solid $Cyan;
+        }
+
+        &.red {
+            margin-bottom: 2.5rem;
+            border-top: 3px solid $Red;
+        }
+
+         &.yellow {
+            border-top: 3px solid $Orange;
+        }
+
+         &.blue {
+            border-top: 3px solid $Blue;
+        }
+
+        .card-icon {
+            text-align: right;
+        }
+
+          h2 {
+            font-weight: 600;
+        }
+
+        .card-text {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+
+footer {
+    .attribution { 
+        font-size: 11px; text-align: center;
+        a { color: hsl(228, 45%, 44%); }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        .tagline {
+            font-size: 1.6rem;
+        }
+
+        h1 {
+            font-size: 1.65rem;
+        }
+
+        .description {
+            width: 75%;
+            margin: 1rem auto 3rem;
+        }
+    }
+    .cards {
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 90%;
+        
+
+        .card {
+             margin-bottom: 2.5rem;
+             justify-self: center;
+             width: 90%;
+        }
+    }
+    
+}

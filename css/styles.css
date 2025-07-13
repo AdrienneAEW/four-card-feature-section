@@ -1,0 +1,95 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1, h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+main h1, main .tagline, main .description {
+  text-align: center;
+}
+main .tagline, main .description {
+  color: hsl(229, 6%, 66%);
+}
+main .tagline {
+  font-weight: 200;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+main h1 {
+  margin: 0;
+}
+main .description {
+  width: 40%;
+  margin: 1.75rem auto 3.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+.cards .card {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  align-self: center;
+  box-shadow: -6px 6px 12px -3px hsl(229, 6%, 66%);
+  width: 80%;
+}
+.cards .card.green {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.cards .card.red {
+  margin-bottom: 2.5rem;
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.cards .card.yellow {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.cards .card.blue {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+.cards .card .card-icon {
+  text-align: right;
+}
+.cards .card h2 {
+  font-weight: 600;
+}
+.cards .card .card-text {
+  margin-bottom: 2.5rem;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 900px) {
+  main .tagline {
+    font-size: 1.6rem;
+  }
+  main h1 {
+    font-size: 1.65rem;
+  }
+  main .description {
+    width: 75%;
+    margin: 1rem auto 3rem;
+  }
+  .cards {
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 90%;
+  }
+  .cards .card {
+    margin-bottom: 2.5rem;
+    justify-self: center;
+    width: 90%;
+  }
+}/*# sourceMappingURL=styles.css.map */
