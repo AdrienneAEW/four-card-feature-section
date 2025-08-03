@@ -64,5 +64,5 @@ There are tons of new CSS properties to use in conjuction with both framworks, b
 ## Author
 
 - Website - [AdrienneAEW](https://adrienneaew.me)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/AdrienneAEW)
+- Frontend Mentor - [@yAdrienneAEW](https://www.frontendmentor.io/profile/AdrienneAEW)
 
